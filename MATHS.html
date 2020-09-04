@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+       <meta name="HandheldFriendly" content="true">
+
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <title>Математика</title>
+        <link rel="stylesheet" href="style.css">
+        <script src = "responsive.js"></script>
+        
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">
+                    <img src="logo.png" id="logoimg"
+                     alt="Аз знам! Сайтът на четвъртокласника">
+            </div>
+        </header>
+
+            <div class="topnav" id="myTopnav">
+                <a href="HOME.html">Начало</a>
+
+                <a href="INTERESTING.html">Любопитно</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Тестове
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+  
+                    <div class="dropdown-content">
+                      <a href="#">Математика</a>
+                      <a href="BULGARIAN.html">Български език</a>
+                      <a href="ENGLISH.html">Английски език</a>
+                      <a href="CHOVEK_I_PRIRODA.html">Човекът и природата</a>
+                      <a href="CHOVEK_I_OBSHTESTVO.html">Човекът и обществото</a>
+                    </div>
+                </div> 
+
+                <a href="SIGN_IN.html">Моят профил</a>
+                <a href="REGISTER.html">Регистрация</a>
+
+                <a href="javascript:void(0);" class="icon" onclick="addResponsive()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+        <div class="wrapper">
+            <div class="allitems">
+            
+                <div class = "timer">
+                    <button id="startbtn">Започни теста</button>
+                    <div> <p>Оставащо време: <span id="time_remaining">10:00</span></p> </div>
+                </div>
+
+
+            <div id="quiz">
+                <ol class = "test">
+                    <li>
+                        <div class = "question">
+                            <p>Числото, което е 7 пъти по-малко от 714, е:</p>
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question1" value="а">
+                                <label for="ans-1">а) 120</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question1" value="б">
+                                <label for="ans-1">б) 102</label>
+                                
+                            </div>
+                        
+                            <div>
+                                <input type="radio" name="question1" value="в">
+                                <label for="ans-1">в) 12</label>
+                            </div>
+                        </section>
+                    </li>
+                
+                    <li>
+                        <div class = "question">
+                            <p>Мария има 420 марки в колекцията си, а Ана - с 4 повече. Колко марки имат двете общо? <br>
+                            Решението на задачата е:</p>
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question2" value="а">
+                                <label for="ans-1">а) 420+4</label>
+                            
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question2" value="б">
+                                <label for="ans-1">б) 420+(420+4)</label>
+                                
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question2" value="в">
+                                <label for="ans-1">в) 420:4</label>
+                            </div>
+                        </section>
+                    </li>
+
+                    <li>
+                        <div class = "question">
+                            <p>Колко килограма са 7т 26кг?</p>
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question3" value="а">
+                                <label for="ans-1">а) 70 026 кг</label>
+                                
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question3" value="б">
+                                <label for="ans-1">б) 726 кг</label>
+                                
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question3" value="в">
+                                <label for="ans-1">в) 7026 кг</label>
+                            </div>
+                        </section>
+                    </li>
+                    
+                    <li>
+                        <div class = "question">
+                            <p>Четвъртинката на 8 тона е:</p>
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question4" value="а">
+                                <label for="ans-1">а) 200 кг</label>
+                                
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question4" value="б">
+                                <label for="ans-1">б) 2 000 кг</label>
+                                
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question4" value="в">
+                                <label for="ans-1">в) 4 000 кг</label>
+                            </div>
+                        </section>
+                    </li>
+
+                    <li>
+                        <div class = "question">
+                            <p>Обиколката и лицето на квадрат със страна 50 дм са:</p>
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question5" value="а">
+                                <label for="ans-1">а) 200 дм, 200 кв.дм</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question5" value="б">
+                                <label for="ans-1">б) 200 дм, 2 500 кв.дм</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question5" value="в">
+                                <label for="ans-1">в) 200 см, 2 500 кв.см</label>
+                            </div>
+                        </section>
+                    </li>
+
+                    <li>
+                        <div class = "question">
+                            <p>Цифрата на десетохилядите в числото 32 471 006 е:</p>
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question6" value="а">
+                                <label for="ans-1">а) 7</label>
+                                
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question6" value="б">
+                                <label for="ans-1">б) 4</label>
+                                
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question6" value="в">
+                                <label for="ans-1">в) 2</label>
+                            </div>
+                        </section>
+                    </li>
+
+                    <li>
+                        <div class = "question">
+                            <p>Триъгълникът на чертежа е:</p>
+                            <img src = "obtuse_triangle.jpg" alt = "триъгълник с ъгъл, равен на 120 градуса">
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question7" value="а">
+                                <label for="ans-1">а) остроъгълен</label>       
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question7" value="б">
+                                <label for="ans-1">б) правоъгълен</label>    
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question7" value="в">
+                                <label for="ans-1">в) тъпоъгълен</label> 
+                            </div>
+                        </section>
+                    </li>
+
+                    <li>
+                        <div class = "question">
+                            <p>Кои две числа не са сравнени вярно?</p>
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question8" value="а">
+                                <label for="ans-1">а) 9 405 &lt; 9 056</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question8" value="б">
+                                <label for="ans-1">б) 60 705 &lt; 60 804</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question8" value="в">
+                                <label for="ans-1">в) 3 108 &gt; 318</label>
+                            </div>
+                        </section>
+                    </li>
+                    
+                    <li>
+                        <div class = "question">
+                            <p>Произведението на числата 28 и 405 е равно на:</p>
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question9" value="а">
+                                <label for="ans-1">а) 3 240</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question9" value="б">
+                                <label for="ans-1">б) 11 340</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question9" value="в">
+                                <label for="ans-1">в) 11 440</label>
+                            </div>
+                        </section>
+                    </li>
+
+                    <li>
+                        <div class = "question">
+                            <p>Броят на квадратите във фигурата е:</p>
+                            <img src = "rectangle.png" alt = "правоъгълник, разделен на 6 квадратчета">
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question10" value="а">
+                                <label for="ans-1">а) шест</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question10" value="б">
+                                <label for="ans-1">б) осем</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question10" value="в">
+                                <label for="ans-1">в) девет</label>
+                            </div>
+                        </section>
+                    </li>
+                </ol>
+
+            </div>
+ 
+            <button id="submit">Виж резултата</button>
+
+            <div id="results"></div> 
+
+            <table id="correctanswers">
+                <caption>Верни отговори</caption>
+
+                <tr>
+                <th>Въпрос</th>
+                <th>Отговор</th>
+                </tr>
+
+                <tr>
+                <td>1</td>
+                <td>б)</td>
+                </tr>
+                
+                <tr>
+                <td>2</td>
+                <td>б)</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>в)</td>
+                </tr>
+                
+                <tr>
+                    <td>4</td>
+                    <td>б)</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>б)</td>
+                </tr>
+                
+                <tr>
+                    <td>6</td>
+                    <td>а)</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>в)</td>
+                </tr>
+                
+                <tr>
+                    <td>8</td>
+                    <td>а)</td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>б)</td>
+                </tr>
+                
+                <tr>
+                    <td>10</td>
+                    <td>б)</td>
+                </tr>
+            </table>
+
+            </div>
+            </div>
+
+        <footer>
+            <div class="copyright">
+                <p>&#9400; Copyright 2020 Аз знам! Сайтът на четвъртокласника</p>
+            </div>
+
+            <div class="info">
+                <p>Публикуван от: Теодора Георгиева</p>
+                <p>За контакт: <a id="mail" href="mailto:tgeorgieva15@yahoo.com">tgeorgieva15@yahoo.com</a> </p>
+            </div>
+
+        </footer>
+
+        <script src="tests.js"></script>
+
+    </body>
+</html>

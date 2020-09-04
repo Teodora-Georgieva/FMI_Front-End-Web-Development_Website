@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+       <meta name="HandheldFriendly" content="true">
+
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <title>Научете повече</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src = "responsive.js"></script>
+        <script src = "http_request.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">
+                    <img src="logo.png"  id="logoimg"
+                     alt="Аз знам! Сайтът на четвъртокласника">
+            </div>
+        </header>
+    
+            <div class="topnav" id="myTopnav">
+                <a class="home" href="HOME.html">Начало</a>
+
+                <a href="#">Любопитно</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Тестове
+                        <i class="fa fa-caret-down"></i> 
+                    </button>
+  
+                    <div class="dropdown-content">
+                      <a href="MATHS.html">Математика</a>
+                      <a href="BULGARIAN.html">Български език</a>
+                      <a href="ENGLISH.html">Английски език</a>
+                      <a href="CHOVEK_I_PRIRODA.html">Човекът и природата</a>
+                      <a href="CHOVEK_I_OBSHTESTVO.html">Човекът и обществото</a>
+                    </div>
+                </div> 
+
+                <a href="SIGN_IN.html">Моят профил</a>
+                <a href="REGISTER.html">Регистрация</a>
+
+                <a href="javascript:void(0);" class="icon" onclick="addResponsive()">
+                    <i class="fa fa-bars"></i>
+            </div>
+
+        <div class="row">
+            <div class="column">
+                <section>
+                    <a href="https://ucha.se/videos/matematika/4-klas/" target = "_blank" onclick="httpRequest()">
+                        <img onmouseover="changeFirstImg(this)" onmouseout="normalImg(this)" 
+                             src="maths_1.jpg" alt="Mathematics">
+                    </a>
+
+                    <p class="about"> Открий чудния свят на числата и се забавлявай, докато учиш нови неща.</p>
+                </section>
+            </div>
+
+            <div class="column">
+                <section>
+                    <a href="https://ucha.se/videos/balgarski-ezik/4-klas/" target = "_blank" onclick="httpRequest()">
+                        <img onmouseover="changeSecondImg(this)" onmouseout="normalImg(this)"
+                             src="bel_2.jpg" alt="Bulgarian">
+                    </a>
+
+                    <p class="about"> Научи повече за правилата и особеностите на родния ни език.</p>
+                </section>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class="column">
+                <section>
+                    <a href="http://www.english-4kids.com/grade4.html" target = "_blank" onclick="httpRequest()">
+                        <img onmouseover="changeFirstImg(this)" onmouseout="normalImg(this)"
+                             src="eng_4.jpg" alt="English">
+                    </a>
+
+                    <p class="about">Владеенето на чужди езици отваря много врати! Научи английски лесно и забавно.</p>
+                    </section>
+            </div>
+
+            <div class="column">
+                <section>
+                    <a href="https://ucha.se/videos/chovekat-i-prirodata/4-klas/" target = "_blank" onclick="httpRequest()">
+                        <img onmouseover="changeSecondImg(this)" onmouseout="normalImg(this)"
+                            src="chovek_i_priroda.jpg" alt="Chovek i priroda">
+                    </a>
+
+                    <p class="about">Научи за чудесата на природата, за опасностите от замърсяването й и
+                        за това колко е важно да я пазим.</p>
+                </section>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <section>
+                    <a href="https://ucha.se/videos/chovekat-i-obshtestvoto/4-klas/" target = "_blank" onclick="httpRequest()">
+                        <img onmouseover="changeFirstImg(this)" onmouseout="normalImg(this)"
+                            src="chovek_i_obshtestvo.jpg" alt="Chovek i obshtestvo">
+                    </a>
+
+                    <p class="about">Прочети повече за славното минало на нашата <br> родина и за други интересни
+                                     исторически събития.</p>
+                </section>
+            </div>
+        </div>
+
+        <footer>
+            <div class="copyright">
+                <p>&#9400; Copyright 2020 Аз знам! Сайтът на четвъртокласника</p>
+            </div>
+
+            <div class="info">
+                <p>Публикуван от: Теодора Георгиева</p>
+                <p>За контакт: <a id="mail" href="mailto:tgeorgieva15@yahoo.com">tgeorgieva15@yahoo.com</a> </p>
+            </div>
+        </footer>
+
+        <script src="increase_img.js"> </script>
+
+    </body>
+</html>

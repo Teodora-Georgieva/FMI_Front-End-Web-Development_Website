@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+    <head>
+       <meta charset="utf-8">
+
+       <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+       <meta name="HandheldFriendly" content="true">
+       <!-- The 3 tags will set the view on all screens at a 1×1 aspect ratio and remove the default functionality from iPhones and other mobile devices which render websites at full-view and allow users to zoom into
+        the layout by pinching. -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- without this, fa-bars icon doesn't show -->
+
+        <title>Добре дошли в сайта на чевъртокласника!</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src = "responsive.js"></script>
+        
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">
+                        <img src="logo.png" id="logoimg"
+                         alt="Аз знам! Сайтът на четвъртокласника">
+            </div>
+        </header>
+
+            <div class="topnav" id="myTopnav">
+                <a class="home" href="#">Начало</a>
+
+                <a href="INTERESTING.html">Любопитно</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Тестове
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+  
+                    <div class="dropdown-content">
+                      <a href="MATHS.html">Математика</a>
+                      <a href="BULGARIAN.html">Български език</a>
+                      <a href="ENGLISH.html">Английски език</a>
+                      <a href="CHOVEK_I_PRIRODA.html">Човекът и природата</a>
+                      <a href="CHOVEK_I_OBSHTESTVO.html">Човекът и обществото</a>
+                    </div>
+                </div> 
+
+                <a href="SIGN_IN.html">Моят профил</a>
+                <a href="REGISTER.html">Регистрация</a>
+                
+                <a href="javascript:void(0);" class="icon" onclick="addResponsive()">
+                        <!-- The reason you’d want to do this with the href of a link is that normally,
+                             a javascript: URL will redirect the browser to a plain text version of the result of
+                              evaluating that JavaScript. But if the result is undefined, then the browser stays on the same page.
+                               void(0) is just a short and simple script that evaluates to undefined.
+                            
+                        !!!!!   MORE INFO: https://stackoverflow.com/questions/1291942/what-does-javascriptvoid0-mean       -->
+    
+                       <i class="fa fa-bars"></i> 
+                </a>
+            </div>
+
+        <div class="slideshow-container">
+
+            <div class="slide fade">
+                <img class = "slideimg" src="homepage_1.jpg" alt="Knowledge is power">
+            </div>
+            
+            <div class="slide fade">
+                <img class = "slideimg" src="grade_4.png" alt="Grade 4">
+            </div>
+
+            <div class="slide fade">
+                <img class = "slideimg" src="homepage_2.jpg" alt="Studying girl">
+            </div>
+        
+            <div class="slide fade">
+                <img class = "slideimg" src="homepage_3.jpg" alt="Bulgaria">
+            </div>
+
+            <div class="slide fade">
+                <img class = "slideimg" src="homepage_4.jpg" alt="Mathematics">
+            </div>
+        
+            <div class="slide fade">
+                <img class = "slideimg" src="homepage_5.jpg" alt="English">
+            </div>
+        
+            <div class="slide fade">
+                <img class = "slideimg" src="homepage_6.jpg" alt="Planets">
+            </div>
+
+            <div class="slide fade">
+                <img class = "slideimg" src="homepage_7.jpg" alt="Love the Earth">
+            </div>
+        </div>
+        <br>
+
+        <footer>
+            <div class="copyright">
+                <p>&#9400; Copyright 2020 Аз знам! Сайтът на четвъртокласника</p>
+            </div>
+
+            <div class="info">
+                <p>Публикуван от: Теодора Георгиева</p>
+                <p>За контакт: <a id="mail" href="mailto:tgeorgieva15@yahoo.com">tgeorgieva15@yahoo.com</a> </p>
+            </div>
+
+        </footer>
+
+        <script src="home.js"></script>
+
+    </body>
+</html>

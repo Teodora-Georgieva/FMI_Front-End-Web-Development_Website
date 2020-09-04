@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+    <head>
+      <meta charset="utf-8">
+
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="HandheldFriendly" content="true">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+      <title>Регистрирай се</title>
+      <link rel="stylesheet" type="text/css" href="style.css"> 
+      <script src = "responsive.js"></script>
+      <script src = "form_validation.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">
+                  <img src="logo.png" id="logoimg"
+                  alt="Аз знам! Сайтът на четвъртокласника" class = "responsiveimg">
+            </div>
+          </header>
+
+            <div class="topnav" id="myTopnav">
+                <a href="HOME.html">Начало</a>
+
+                <a href="INTERESTING.html">Любопитно</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Тестове
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+  
+                    <div class="dropdown-content">
+                      <a href="MATHS.html">Математика</a>
+                      <a href="BULGARIAN.html">Български език</a>
+                      <a href="ENGLISH.html">Английски език</a>
+                      <a href="CHOVEK_I_PRIRODA.html">Човекът и природата</a>
+                      <a href="CHOVEK_I_OBSHTESTVO.html">Човекът и обществото</a>
+                    </div>
+                </div> 
+
+                <a href="SIGN_IN.html">Моят профил</a>
+                <a href="#">Регистрация</a>
+                <a href="javascript:void(0);" class="icon" onclick="addResponsive()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        
+          <form action="#" onsubmit="emptyFields()" method = "post">
+              <div class="container">
+                <h1>Регистрация</h1>
+                
+                <label for="email"><b>Имейл</b></label>
+                <input class="userinput" type="text" onblur="validateEmail()" placeholder="Въведи имейл" name="email" id="email">
+
+                <label for="uname"><b>Потребителско име</b></label>
+                <input class="userinput" type="text" placeholder="Въведи потребителско име" name="username" id="username">
+            
+                <label for="psw"><b>Парола</b></label>
+                <input class="userinput" type="password" onblur="validatePassword()" placeholder="Въведи парола" name="psw" id="password">
+                
+                <div id="reg_button" class="btn">
+                  <button type="submit" class="registerbtn">Регистрирай се</button>
+                </div>
+              </div>
+            </form>
+      
+
+          <footer>
+            <div class="copyright">
+              <p>&#9400; Copyright 2020 Аз знам! Сайтът на четвъртокласника</p>
+          </div>
+
+          <div class="info">
+              <p>Публикуван от: Теодора Георгиева</p>
+              <p>За контакт: <a id="mail" href="mailto:tgeorgieva15@yahoo.com">tgeorgieva15@yahoo.com</a> </p>
+          </div>
+
+          </footer>
+    </body>
+</html>

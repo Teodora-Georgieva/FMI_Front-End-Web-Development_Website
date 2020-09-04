@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+       <meta name="HandheldFriendly" content="true">
+         
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Човекът и обществото</title>
+        <link rel="stylesheet" href="style.css">
+        <script src = "responsive.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">
+                    <img src="logo.png" id="logoimg"
+                     alt="Аз знам! Сайтът на четвъртокласника" class = "responsiveimg">
+            </div>
+        </header>
+
+            <div class="topnav" id="myTopnav">
+                <a href="HOME.html">Начало</a>
+
+                <a href="INTERESTING.html">Любопитно</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Тестове
+                        <i class="fa fa-caret-down"></i> 
+                    </button>
+  
+                    <div class="dropdown-content">
+                      <a href="MATHS.html">Математика</a>
+                      <a href="BULGARIAN.html">Български език</a>
+                      <a href="ENGLISH.html">Английски език</a>
+                      <a href="CHOVEK_I_PRIRODA.html">Човекът и природата</a>
+                      <a href="#">Човекът и обществото</a>
+                    </div>
+                </div> 
+
+                <a href="SIGN_IN.html">Моят профил</a>
+                <a href="REGISTER.html">Регистрация</a>
+
+                <a href="javascript:void(0);" class="icon" onclick="addResponsive()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+        <div class="wrapper">
+            <div class="allitems">
+                <div class = "timer">
+                    <button id="startbtn">Започни теста</button>
+                    <div> <p>Оставащо време: <span id="time_remaining">10:00</span></p> </div>
+                </div>
+
+                <div id="quiz">
+                <ol class="test">
+                    <li>
+                        <div class = "question">
+                            <p>На 1<sup>ви</sup> ноември отбелязваме:</p>
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question1" value="а">
+                                <label for="ans-1">а) Деня на народните будители</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question1" value="б">
+                                <label for="ans-1">б) Деня на Освобождението</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question1" value="в">
+                                <label for="ans-1">в) Деня на Съединението</label>
+                            </div>
+                        </section>
+                    </li>
+                
+                    <li>
+                        <div class = "question">
+                            <p>Кой приема законите в Република България?</p>
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question2" value="а">
+                                <label for="ans-1">а) Президентът</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question2" value="б">
+                                <label for="ans-1">б) Правителството</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question2" value="в">
+                                <label for="ans-1">в) Народното събрание</label>
+                            </div>
+                        </section>
+                    </li>
+                    
+                    <li>
+                        <div class = "question">
+                            <p>Кой девиз е изписан върху герба на Република България?</p>
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question3" value="а">
+                                <label for="ans-1">а) „Съединението прави силата“</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question3" value="б">
+                                <label for="ans-1">б) „Напред, науката е слънце“</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question3" value="в">
+                                <label for="ans-1">в) „Расте, но не старее“</label>
+                            </div>
+                        </section>
+                    </li>
+                        
+                    <li>
+                        <div class = "question">
+                            <p>Кое твърдение за Рило-Родопската област е ВЯРНО?</p>
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question4" value="а">
+                                <label for="ans-1">а) Разположена е в Северна България.</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question4" value="б">
+                                <label for="ans-1">б) От нея водят началото си реките Искър и Марица.</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question4" value="в">
+                                <label for="ans-1">в) Простира се от западната граница до Черно море.
+                                </label>
+                            </div>
+                        </section>
+                    </li>
+                        
+                    <li>
+                        <div class = "question">
+                            <p>С какво се свързва управлението на хан Аспарух?</p>
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question5" value="а">
+                                <label for="ans-1">а) създаване на българската държава</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question5" value="б">
+                                <label for="ans-1">б) основаване на Българската църква</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question5" value="в">
+                                <label for="ans-1">в) издаване на първите писани закони</label>
+                            </div>
+                        </section>
+                    </li>
+                        
+                    <li>
+                        <div class = "question">
+                            <p>Управлението на кой владетел наричат „Златен век“ на българската култура?</p>
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question6" value="а">
+                                <label for="ans-1">а) цар Самуил</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question6" value="б">
+                                <label for="ans-1">б) цар Симеон</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question6" value="в">
+                                <label for="ans-1">в) хан Крум</label>
+                            </div>
+                        </section>
+                    </li>
+                        
+                    <li>
+                        <div class = "question">
+                            <p>Кой е авторът на „Рибния буквар“?</p>
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question7" value="а">
+                                <label for="ans-1">а) Иван Вазов</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question7" value="б">
+                                <label for="ans-1">б) Васил Априлов</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question7" value="в">
+                                <label for="ans-1">в) Петър Берон</label>
+                            </div>
+                        </section>
+                    </li>
+
+                    <li>
+                        <div class = "question">
+                            <p>Коя е столицата на българската държава по времето на Асеневци?</p>
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question8" value="а">
+                                <label for="ans-1">а) Охрид</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question8" value="б">
+                                <label for="ans-1">б) Търново</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question8" value="в">
+                                <label for="ans-1">в) Плиска</label>
+                            </div>
+                        </section>
+                    </li>
+                        
+                    <li>
+                        <div class = "question">
+                            <p>Обществото включва различни групи от хора. Коя от посочените е най-малката?</p>
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question9" value="а">
+                                <label for="ans-1">а) класът</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question9" value="б">
+                                <label for="ans-1">б) училището</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question9" value="в">
+                                <label for="ans-1">в) семейството</label>
+                            </div>
+                        </section>
+                    </li>
+                        
+                    <li>
+                        <div class = "question">
+                            <p>Коя българска личност е изобразена на портрета?</p>
+                            <img class = "responsiveimg" src = "Botev.png" alt = "Христо Ботев">
+                        </div>
+
+                        <section class = "answers">
+                            <div>
+                                <input type="radio" name="question10" value="а">
+                                <label for="ans-1">а) Христо Ботев</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question10" value="б">
+                                <label for="ans-1">б) Христо Смирненски</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="question10" value="в">
+                                <label for="ans-1">в) Иван Вазов</label>
+                            </div>
+                        </section>
+                    </li>
+                </ol class="test">
+            </div>
+
+            <button id="submit">Виж резултата</button>
+
+            <div id="results"></div>
+
+            <table id="correctanswers">
+                <caption>Верни отговори</caption>
+
+                <tr>
+                <th>Въпрос</th>
+                <th>Отговор</th>
+                </tr>
+
+                <tr>
+                <td>1</td>
+                <td>а)</td>
+                </tr>
+                
+                <tr>
+                <td>2</td>
+                <td>в)</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>а)</td>
+                </tr>
+                
+                <tr>
+                    <td>4</td>
+                    <td>б)</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>а)</td>
+                </tr>
+                
+                <tr>
+                    <td>6</td>
+                    <td>б)</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>в)</td>
+                </tr>
+                
+                <tr>
+                    <td>8</td>
+                    <td>б)</td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>в)</td>
+                </tr>
+                
+                <tr>
+                    <td>10</td>
+                    <td>а)</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+        <footer>
+            <div class="copyright">
+                <p>&#9400; Copyright 2020 Аз знам! Сайтът на четвъртокласника</p>
+            </div>
+
+            <div class="info">
+                <p>Публикуван от: Теодора Георгиева</p>
+                <p>За контакт: <a id="mail" href="mailto:tgeorgieva15@yahoo.com">tgeorgieva15@yahoo.com</a> </p>
+            </div>
+
+        </footer>
+        
+        <script src="tests.js"></script>
+    </body>
+</html>
+
+
+

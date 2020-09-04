@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+ <html lang="bg">
+
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+       <meta name="HandheldFriendly" content="true">
+    
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <title>Човекът и природата</title>
+        <link rel="stylesheet" href="style.css">
+        <script src = "responsive.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">
+                    <img src="logo.png" id="logoimg"
+                     alt="Аз знам! Сайтът на четвъртокласника" class = "responsiveimg">
+            </div>
+        </header>
+
+            <div class="topnav" id="myTopnav">
+                <a href="HOME.html">Начало</a>
+
+                <a href="INTERESTING.html">Любопитно</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Тестове
+                        <i class="fa fa-caret-down"></i> 
+                    </button>
+  
+                    <div class="dropdown-content">
+                      <a href="MATHS.html">Математика</a>
+                      <a href="BULGARIAN.html">Български език</a>
+                      <a href="ENGLISH.html">Английски език</a>
+                      <a href="#">Човекът и природата</a>
+                      <a href="CHOVEK_I_OBSHTESTVO.html">Човекът и обществото</a>
+                    </div>
+                </div> 
+
+                <a href="SIGN_IN.html">Моят профил</a>
+                <a href="REGISTER.html">Регистрация</a>
+
+                <a href="javascript:void(0);" class="icon" onclick="addResponsive()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+        <div class="wrapper">
+        <div class="allitems">
+            <div class = "timer">
+                <button id="startbtn">Започни теста</button>
+                <div> <p>Оставащо време: <span id="time_remaining">10:00</span></p> </div>
+            </div>
+
+            <div id="quiz">
+            <ol class="test">
+                <li>
+                    <div class = "question">
+                        <p>В кой ред изброените вещества се разтварят във вода?</p>
+                    </div>
+
+                    <section class = "answers">
+                        <div>
+                            <input type="radio" name="question1" value="а">
+                            <label for="ans-1">а) желязо, пясък, бензин</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question1" value="б">
+                            <label for="ans-1">б) сол, захар, оцет</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question1" value="в">
+                            <label for="ans-1">в) пясък, стъкло, олио</label>
+                        </div>
+                    </section>
+                </li>
+                
+                <li>
+                    <div class = "question">
+                        <p>В коя група всички организми обитават една и съща среда на живот?</p>
+                    </div>
+
+                    <section class = "answers">
+                        <div>
+                            <input type="radio" name="question2" value="а">
+                            <label for="ans-1">а) водорасли, мида, шаран</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question2" value="б">
+                            <label for="ans-1">б) водна лилия, рак, лалугер</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question2" value="в">
+                            <label for="ans-1">в) водно конче, папур, синигер</label>
+                        </div>
+                    </section>
+                </li>
+
+                <li>
+                    <div class = "question">
+                        <p>Към коя група растения принадлежи ягодата?</p>
+                    </div>
+
+                    <section class = "answers">
+                        <div>
+                            <input type="radio" name="question3" value="а">
+                            <label for="ans-1">а) малина, къпина, шипка</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question3" value="б">
+                            <label for="ans-1">б) дъб, бор, ябълка</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question3" value="в">
+                            <label for="ans-1">в) лайка, кокиче, здравец</label>
+                        </div>
+                    </section>
+                </li>
+
+                <li>
+                    <div class = "question">
+                        <p>За коя група животни се отнася описанието: <br>
+
+                        "Тялото им е покрито със суха кожа или с люспи. Размножават се, като снасят яйца на сушата. 
+                        Не се грижат за малките си."</p>
+                    </div>
+
+                    <section class = "answers">
+                        <div>
+                            <input type="radio" name="question4" value="а">
+                            <label for="ans-1">а) птици</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question4" value="б">
+                            <label for="ans-1">б) риби</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question4" value="в">
+                            <label for="ans-1">в) влечуги</label>
+                        </div>
+                    </section>
+                </li>
+
+                <li>
+                    <div class = "question">
+                        <p>Смяната на деня с нощта се дължи на движението на:</p>
+                    </div>
+
+                    <section class = "answers">
+                        <div>
+                            <input type="radio" name="question5" value="а">
+                            <label for="ans-1">а) Луната около Земята</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question5" value="б">
+                            <label for="ans-1">б) Земята около нейната (мислена) ос</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question5" value="в">
+                            <label for="ans-1">в) Земята около Слънцето</label>
+                        </div>
+                    </section>
+                </li>
+
+                <li>
+                    <div class = "question">
+                        <p>Кой от изброените жизнени процеси осигурява енергия на организмите?</p>
+                    </div>
+
+                    <section class = "answers">
+                        <div>
+                            <input type="radio" name="question6" value="а">
+                            <label for="ans-1">а) развитие</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question6" value="б">
+                            <label for="ans-1">б) движение</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question6" value="в">
+                            <label for="ans-1">в) хранене</label>
+                        </div>
+                    </section>
+                </li>
+
+                <li>
+                    <div class = "question">
+                        <p>Кой етап от живота на човека се свързва с полово съзряване, усилен растеж и
+                            развитие на всички органи?</p>
+                    </div>
+
+                    <section class = "answers">
+                        <div>
+                            <input type="radio" name="question7" value="а">
+                            <label for="ans-1">а) зряла възраст</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question7" value="б">
+                            <label for="ans-1">б) детска възраст</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question7" value="в">
+                            <label for="ans-1">в) пубертет</label>
+                        </div>
+                    </section>
+                </li>
+
+                <li>
+                    <div class = "question">
+                        <p>Коя дейност води до замърсяване на природата?</p>
+                    </div>
+
+                    <section class = "answers">
+                        <div>
+                            <input type="radio" name="question8" value="а">
+                            <label for="ans-1">а) разделното събиране на отпадъци</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question8" value="б">
+                            <label for="ans-1">б) използването на слънчева енергия</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question8" value="в">
+                            <label for="ans-1">в) изгарянето на природни горива</label>
+                        </div>
+                    </section>
+                </li>
+                
+                <li>
+                    <div class = "question">
+                        <p>Под действието на слънчевата топлина водата в локвите, образувани след дъжд:</p>
+                    </div>
+
+                    <section class = "answers">
+                        <div>
+                            <input type="radio" name="question9" value="а">
+                            <label for="ans-1">а) се превръща във водна пара</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question9" value="б">
+                            <label for="ans-1">б) не се променя</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question9" value="в">
+                            <label for="ans-1">в) се превръща в лед</label>
+                        </div>
+                    </section>
+                </li>
+
+                <li>
+                    <div class = "question">
+                        <p>Каква дейност извършва посоченият на схемата орган?</p>
+                        <img class = "responsiveimg" src = "human.png" alt = "human">
+                    </div>
+
+                    <section class = "answers">
+                        <div>
+                            <input type="radio" name="question10" value="а">
+                            <label for="ans-1">а) участва в смилането на храната</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question10" value="б">
+                            <label for="ans-1">б) управлява всички органи в тялото</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question10" value="в">
+                            <label for="ans-1">в) участва в процеса дишане</label>
+                        </div>
+                    </section>
+                </li>
+            </ol c>
+        </div>
+        
+
+        <button id="submit">Виж резултата</button>
+
+        <div id="results"></div>
+
+        <table id="correctanswers">
+            <caption>Верни отговори</caption>
+
+            <tr>
+              <th>Въпрос</th>
+              <th>Отговор</th>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>б)</td>
+            </tr>
+            
+            <tr>
+              <td>2</td>
+              <td>а)</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>а)</td>
+              </tr>
+              
+              <tr>
+                <td>4</td>
+                <td>в)</td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+                <td>б)</td>
+              </tr>
+              
+              <tr>
+                <td>6</td>
+                <td>в)</td>
+              </tr>
+
+              <tr>
+                <td>7</td>
+                <td>в)</td>
+              </tr>
+              
+              <tr>
+                <td>8</td>
+                <td>в)</td>
+              </tr>
+
+              <tr>
+                <td>9</td>
+                <td>а)</td>
+              </tr>
+              
+              <tr>
+                <td>10</td>
+                <td>в)</td>
+              </tr>
+          </table>
+          </div>
+          </div>
+
+        <footer>
+            <div class="copyright">
+                <p>&#9400; Copyright 2020 Аз знам! Сайтът на четвъртокласника</p>
+            </div>
+
+            <div class="info">
+                <p>Публикуван от: Теодора Георгиева</p>
+                <p>За контакт: <a id="mail" href="mailto:tgeorgieva15@yahoo.com">tgeorgieva15@yahoo.com</a> </p>
+            </div>
+
+        </footer>
+
+        <script src="tests.js"></script>
+    </body>
+</html>
+
+
